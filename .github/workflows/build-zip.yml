@@ -21,8 +21,8 @@ jobs:
     container:
       image: alpine:3.20
     steps:
-      - name: Install build deps (zip + glib-compile-schemas)
-        run: apk add --no-cache zip glib nodejs
+      - name: Install build deps (zip + glib-compile-schemas + git)
+        run: apk add --no-cache zip glib nodejs git
 
       - uses: actions/checkout@v4
 
